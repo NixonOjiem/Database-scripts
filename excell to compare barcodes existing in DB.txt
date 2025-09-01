@@ -1,0 +1,8 @@
+-- filter the data if exist in Db
+=IF(COUNTIF(Sheet2!C:C, A2) > 0, "Exists", "Not Found")
+
+
+
+-- This is to look up a particular barcode and copy the entire row of matching barcodes to the new sheet
+
+=XLOOKUP(TRIM(A2), Sheet2!C:C, Sheet2!A:G, "Not Found")
