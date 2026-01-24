@@ -1,6 +1,6 @@
 # Configuration
-$folderPath = "D:\Edits\current\Tea"
-$excelPath = "D:\Edits\current\Tea\Tea.xlsx"
+$folderPath = "D:\shared\Barcodes\Clothes"
+$excelPath =  "D:\shared\Barcodes\Clothes\clothes.xlsx"
 
 # 1. Verify Excel installation
 try {

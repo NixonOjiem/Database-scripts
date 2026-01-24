@@ -1,6 +1,6 @@
 # Import data from Excel and generate SQL
-$excelPath = "D:\oita.xlsx"
-$outputSqlFile = "D:\oita.sql"
+$excelPath = "D:\shared\Barcodes\Wall Arts\completed.xlsx"
+$outputSqlFile = "D:\shared\Barcodes\Wall Arts\completed.sql"
 
 # Install ImportExcel module if needed
 if (-not (Get-Module -Name ImportExcel)) {
@@ -70,7 +70,7 @@ $valueClauses = foreach ($row in $data) {
 
 $sqlCommand = @"
 -- SET SESSION innodb_autoinc_lock_mode = 0;
-ALTER TABLE products AUTO_INCREMENT = 2953;
+ALTER TABLE products AUTO_INCREMENT = 3827;
 INSERT IGNORE INTO products 
     (uuid, barcode, title, description, selling_price,
     category_id, sub_category, mini_category, brand_id, product_type,
