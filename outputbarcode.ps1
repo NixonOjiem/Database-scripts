@@ -1,6 +1,6 @@
 # Configuration
-$folderPath = "D:\shared\Barcodes\Clothes"
-$excelPath =  "D:\shared\Barcodes\Clothes\clothes.xlsx"
+$folderPath = "C:\Users\nicks\Downloads\Hats Barcode"
+$excelPath =  "C:\Users\nicks\Downloads\Hats Barcode\hatsexcell.xlsx"
 
 # 1. Verify Excel installation
 try {

@@ -1,6 +1,6 @@
 # Import data from Excel and generate SQL
-$excelPath = "D:\shared\Barcodes\Stationery\complete.xlsx"
-$outputSqlFile = "D:\shared\Barcodes\Stationery\complete.sql"
+$excelPath = "C:\Users\nicks\Downloads\Hats Barcode\hatscomplete.xlsx"
+$outputSqlFile = "C:\Users\nicks\Downloads\Hats Barcode\hatscomplete.sql"
 
 # Install ImportExcel module if needed
 if (-not (Get-Module -Name ImportExcel)) {
@@ -59,7 +59,7 @@ $valueClauses = foreach ($row in $data) {
 
 $sqlCommand = @"
 -- Set the increment and insert data
-ALTER TABLE products AUTO_INCREMENT = 3951;
+ALTER TABLE products AUTO_INCREMENT = 4190;
 INSERT IGNORE INTO products 
     (uuid, barcode, title, description, selling_price,
     category_id, sub_category, mini_category, brand_id, product_type,
